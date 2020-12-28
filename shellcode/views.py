@@ -93,7 +93,7 @@ def create_loader(request):
         except Exception as e:
             print(e)
 
-    messages.success(request, "Loader生成成功，请稍等一会下载使用")
+    messages.success(request, "Loader生成成功")
     return redirect("/",)
 
 
