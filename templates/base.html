@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <title>AVByPass 在线自动免杀平台</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .glyphicon-console:before {
+            content: "";
+        }
+        .navbar-brand {
+        float: left;
+        height: 50px;
+        padding: 15px 15px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+        .main {
+            width: 70%;
+            height: 40%;
+            top: 50%;
+            left: 50%;
+            margin-top: 5%;
+            margin-left: 15%;
+            margin-bottom: 5%;
+        }
+
+        .navb-text1 {
+            margin-top:15px;
+            margin-bottom:15px;
+            color:#777;
+            {#float:left;#}
+            transform: translateX(-50%);
+            position:relative;
+            left:50%;
+        }
+        .center {
+            position:relative;
+            top: 90%;
+            left: 52%;
+            width:50%;
+            height: 50%;
+            transform: translateX(-50%);
+        }
+
+        .navbar-left {
+            position: absolute;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- 导航条标题-->
+    <div class="navbar-header">
+         <a href="/" class="navbar-brand"><span class="glyphicon glyphicon-console"
+                                                aria-hidden="true"></span>AVByPass 在线自动免杀平台</a>
+    </div>
+    <!-- 基础导航条-->
+{#    <ul class="nav navbar-nav ">#}
+{#        <li><a href="/whatcms">CMS识别</a></li>#}
+{#        <li><a href="/fofa">FOFA</a></li>#}
+{#    </ul>#}
+</div>
+<div class="main">
+
+    {% block body %}{% endblock %}
+
+</div>
+</body>
+
+<div id="footer" class="container">
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div>
+            <p class="navbar-text1 navbar-left">
+                &copy; 2020- yhy All Rights Reserved.
+            </p>
+        </div>
+    </nav>
+</div>
+</html>
